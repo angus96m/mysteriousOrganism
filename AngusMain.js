@@ -1,4 +1,5 @@
 // Returns a random DNA base
+/*
 const returnRandBase = () => {
   const dnaBases = ['A', 'T', 'C', 'G']
   return dnaBases[Math.floor(Math.random() * 4)]
@@ -26,6 +27,7 @@ const pAequorFactory = (specimanNum, dna) => {
       this.dna[randIndex] = newBase;
       return this.dna;
     },
+    */
     compareDNA(otherOrg) {
       const similarities = this.dna.reduce((acc, curr, idx, arr) => {
         if (arr[idx] === otherOrg.dna[idx]) {
@@ -34,6 +36,7 @@ const pAequorFactory = (specimanNum, dna) => {
           return acc;
         }
       }, 0);
+      /*
       const percentOfDNAshared = (similarities / this.dna.length) * 100;
       const percentageTo2Deci = percentOfDNAshared.toFixed(2);
       console.log(`${this.specimanNum} and ${otherOrg.specimanNum} have ${percentageTo2Deci}% DNA in common.`);
